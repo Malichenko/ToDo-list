@@ -1,0 +1,37 @@
+// palette
+@import "../../../../styles/palette";
+
+.list {
+  width: 100%;
+  flex-shrink: 1;
+  background-color: $color6;
+  margin: 30px 30px 0;
+  padding: 30px 0;
+
+  .tasks {
+    padding: 0 30px 0;
+    max-height: 672px;
+    overflow-y: scroll;    
+  }
+
+  &.empty {
+    background: none;
+    padding-top: 126px;
+    display: flex;
+    justify-content: center;
+
+    .tasks {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      background-image: url("../../../../assets/illustration.png");
+      width: 460px;
+      height: 311px;
+      display: block;
+      background-size: cover;
+    }
+  }
+}
+  

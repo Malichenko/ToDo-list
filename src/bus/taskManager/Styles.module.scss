@@ -1,0 +1,42 @@
+// palette
+@import "../../styles/palette";
+
+main {
+  padding-top: 87px;
+  min-height: 100vh;
+}
+
+.wrap {
+  display: flex;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 37px;
+}
+
+.button-create-task {
+  background: none;
+  border: none;
+  color: $color3;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  transition: all 200ms;
+  outline: none;
+
+  &::before {
+    content: "\f055";
+    font-family: "Line Awesome Free";
+    font-weight: 900;
+    margin-right: 7px;
+    font-size: 18px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}

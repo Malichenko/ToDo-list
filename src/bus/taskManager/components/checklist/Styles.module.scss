@@ -1,0 +1,70 @@
+// palette
+@import "../../../../styles/palette";
+
+.checklist {
+  margin-bottom: 34px;
+
+  .label {
+    display: block;
+    font-size: 18px;
+    color: $color4;
+    margin-bottom: 16px;
+  }
+
+  .sub-tasks {
+    .sub-task {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      button {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 2px;
+        background-color: $color5;
+        margin-right: 14px;
+        border-style: none;
+        cursor: pointer;
+      }
+
+      input {
+        font-size: 14px;
+        border: none;
+        outline: none;
+        color: $color4;
+
+        &::placeholder {
+          color: $color17;
+        }
+      }
+
+      &.completed {
+        button::before {
+          content: '\f00c';
+          font-family: 'Line Awesome Free';
+          font-weight: 900;
+          color: #FFFFFF;
+          background-color: #4D7CFE;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          font-size: 15px;
+          border-radius: 2px;
+        }
+      }
+
+      &.incompleted {
+        input {
+          color: $color17;
+        }
+      }
+    }
+  }
+}

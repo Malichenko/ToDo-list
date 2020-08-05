@@ -1,0 +1,1 @@
+export const tagsOption = Object.freeze(["Sketch", "Spotify", "Dribble", "Behance", "UX"]);
