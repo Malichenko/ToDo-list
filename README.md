@@ -2,7 +2,7 @@
     <h1>
        ToDo App
     </h1>
-    <a href="https://malichenko.github.io/weather-widget/">ToDo App ссылка</a>
+    <a href="https://malichenko.github.io/todo-list/">ToDo App ссылка</a>
 </div>
 
 <br>
