@@ -24,9 +24,6 @@ export const TaskManager = () => {
           <Card />
         </div>
       </main>
-      <footer>
-        <span>© 2019 Lectrum LLC - All Rights Reserved.</span>
-      </footer>
     </>
   );
 };
